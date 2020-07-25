@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/minesweeper.css">
+    <title>Document</title>
+</head>
+<body onload="init()">
+    <h1>minesweeper</h1>
+
+    <table border="1" cellpadding="10">
+        <tbody class="game">
+
+        </tbody>
+    </table>
+    <script src="js/minesweeper.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineSweeper</title>
+    <link rel="stylesheet" href="css/minesweeper.css">
+</head>
+
+<body oncontextmenu="return false;" onload="init()">
+    <header class="main-title">
+        <h1>Welcome to my MineSweeper game!</h1>
+    </header>
+    <section class="upper-bar">
+        <h2 class="lives-left">Total Lives left:3</h2><br><br>
+        <h3 class="flags-left">Flags:2</h3>
+        <button class="smiley" onclick="reset()"><img src="pics/smiley.png"></button>
+        <h3 class="timer">0.000</h3><br><br>
+        <section class="bulb-hints">
+            <img class="bulb" onclick="bulbHint()" src="pics/OFFbulb.jpg">
+            <img class="bulb" onclick="bulbHint()" src="pics/OFFbulb.jpg">
+            <img class="bulb" onclick="bulbHint()" src="pics/OFFbulb.jpg">
+        </section>
+    </section>
+    <section class="right-side-bar">
+            <button class="level" onclick="reset()" >Level 1</button><br><br>
+            <button class="level" onclick="level2()">Level 2</button><br><br>
+            <button class="level" onclick="level3()">Level 3</button>
+        </ul>
+    </section>
+    <section class="left-side-bar">
+        <section class="best-scores">
+            <button class="best-score">Best Score</button><br><br>
+            <button class="best-score">Best Score</button><br><br>
+            <button class="best-score">Best Score</button><br>
+        </section>
+    </section>
+    <section class="game">
+
+    </section>
+    <script src="js/minesweeper.js"></script>
+</body>
+
+</html>
